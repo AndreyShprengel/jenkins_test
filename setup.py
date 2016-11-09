@@ -44,6 +44,7 @@ setup(name='starter',
           'testing': tests_require,
       },
       install_requires=requires,
+      tests_require=tests_require,
       entry_points="""\
       [paste.app_factory]
       main = starter:main
