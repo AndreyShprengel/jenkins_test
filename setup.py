@@ -16,9 +16,9 @@ requires = [
     ]
 
 tests_require = [
-    'nose'
+    'nose',
     'WebTest >= 1.3.1',  # py3 compat
-    'webtest'
+    'webtest',
     'pytest',  # includes virtualenv
     'pytest-cov',
     ]
@@ -44,6 +44,7 @@ setup(name='starter',
           'testing': tests_require,
       },
       install_requires=requires,
+      test_suite='nose.collector',
       tests_require=tests_require,
       entry_points="""\
       [paste.app_factory]
